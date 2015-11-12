@@ -68,4 +68,12 @@ public interface IDigitalwatchStatemachine
 
 	public SCILogicUnit getSCILogicUnit();
 
+	public interface SCIState {
+		public void raiseTimeMode();
+		public void raiseChronoMode();
+
+	}
+
+	public SCIState getSCIState();
+
 }
